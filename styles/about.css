@@ -1,0 +1,45 @@
+.about-banner{
+    background: url("https://knight-bite.com/res/about/banner.webp");
+    height: 100vh;
+    margin-top: 0;
+    display: flex;
+    background-size: cover;
+    background-position: center;
+}
+.about-txt{
+   font-size: 3.8vw;
+   font-weight: 800;
+    color: white;
+    margin-top: 175px;
+    letter-spacing: 1px;
+    width: 50vw;
+    text-transform: capitalize;
+    padding-left: 110px;
+    
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 100px 0;
+    justify-content: center;
+    align-content: center;
+    padding: 0 100px;
+    column-gap: 40px;
+    row-gap: 70px;
+}
+.grid-items{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 21px;
+    color: #424242;
+}
+.grid-items img {
+    width: 100%;
+    object-fit: cover;
+}
+.Location{
+    color: #353232;
+    font-weight: 800;
+    margin-right: 35px;
+}
