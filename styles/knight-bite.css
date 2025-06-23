@@ -1,0 +1,448 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Niconne&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+     font-family:"nunito" ;
+     margin: 0px;
+}
+.Features-container{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px;
+    justify-content: space-evenly;
+    align-content: center;
+   margin: 100px 50px;    
+}
+.features{
+   text-align: center;
+   font-size: 55px;
+   color:#424242 ;
+   font-weight: 700;
+   height: fit-content;
+}
+.Description{
+   text-align: center;
+   margin: 40px 0;
+   width: 190px;
+   font-size: 20px;
+    
+}
+.fea{
+    display: flex;
+    flex-direction: column;
+    margin: 40px 0;
+    width: 190px;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 50px;
+    height: 140px;
+    width: 100%;
+    background-color:rgba(0, 0, 0, 0.12);
+    position: fixed;
+    align-items: center;
+    top: 0;
+    zoom: 0.8;
+    
+}
+.tab{
+    transition: .5s;
+  
+}
+.tab:hover{
+    color: #C77BF4;
+   
+   
+    
+}
+.pointer{
+    text-align: center;
+    margin: 5px auto;
+    height: 8px;
+    width: 8px;
+    border-radius: 5px;
+    background: #c77BF4;
+}
+.logo{
+    width: 200px;
+    height: 100px;
+    background: url("https://knight-bite.com/res/kb_logo_new_2.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    
+
+}
+.tabs{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin:0 150px;
+    color: white;
+    font-size: 22px;
+    font-weight:700 ;   
+}
+a{
+    color: white;
+    cursor: pointer;
+    text-decoration:  none;
+}
+.hording{
+
+    
+    top: 0;
+}
+.buttons{
+    text-align: center;
+}
+
+.order-button{
+    padding: 10px 20px;
+    width: 195px;
+    border-radius: 9px;
+    font-size: 20px;
+    font-weight: 700;
+    border: none;
+    background:#FF5672;
+    color: white;
+    cursor: pointer;
+}
+.ios-store{
+    height: 65px;
+    width: 250px;
+    background: url("https://knight-bite.com/res/index/ios-store.svg");
+    background-repeat: no-repeat;
+    transform: scale(1.2);
+    transition: transform .5s ease;
+    
+}
+.android-store{
+    height: 90px;
+    width: 183px;
+    background: url("https://knight-bite.com/res/index/google-play-badge.svg");
+    background-repeat: no-repeat;
+    margin: 0 30px;
+    transform: scale(1.2);
+    transition: transform .5s ease;
+}
+.stores{
+    display: flex;
+    justify-content: center;
+    
+}
+.top-part{
+    background: url("https://knight-bite.com/res/index/app-link-background.svg");
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    background-size: cover;
+    
+}
+.or{
+    color: white;
+    font-weight: 700;
+}
+.heading{
+    text-align: center;
+    font-size: 4em;
+     font-family: "Caprasimo", serif;
+    font-weight: 700;
+    color: white;
+    padding-top: 30vh;
+    letter-spacing: 1.5px;
+    white-space: nowrap;
+    transition: all .4s;
+}
+
+.ios-store:hover , .android-store:hover{
+    cursor: pointer;
+    transform: translateZ(-15px) scale(0.95);
+    transition-delay: .1s;
+    /* transition: transform .5s ease; */
+    /* transition-timing-function:cubic-bezier(0.445, 0.05, 0.55, 0.95); */
+}
+.placard1,.placard2{
+    text-align: center;
+    font-size:1.7em ;
+    font-weight: 700;
+    height: 970px;
+    
+    align-items: center;
+}
+.placard1{
+    background: url("https://knight-bite.com/res/index/banner-1.webp");
+    bottom: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.placard2{
+    top: 0;
+    background: url("https://knight-bite.com/res/index/banner-2.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.banner-text{
+    padding-top: 65vh;
+    color: white;
+    font-size: 6.5rem;
+    font-weight: bold;
+    margin: 0;
+    
+}
+.banners{
+    display: grid;
+}
+.menu-btn{
+    padding: 7px;
+    border-radius: 50px;
+    margin: 0 auto 100px;
+    width: 250px;
+    border: 1.3px solid white;
+    background: none;
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+    margin-top: 3em;
+    cursor: pointer;
+}
+
+.connect-txt{
+    font-size: 55px;
+    text-align: center;
+    font-weight: 700;
+    color:#424242 ;
+    margin-bottom: 0px;
+}
+.connect-container{
+    display: grid;
+    margin: 28px 50px;
+    grid-template-columns: repeat(2, 1fr) 2fr;
+    justify-content: space-around;
+    align-items: stretch;
+    font-family: Nunito;
+    font-style: normal;
+    column-gap: 20px;
+    row-gap: 50px;
+    font-weight: 300;
+    font-size: 20px;
+    color: #424242;
+    padding: 1px 25px;
+    
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+}
+.quick-links{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.head-txt{
+    font-size: 2rem;
+    color:#424242 ;
+    margin: 15px;
+}
+
+.mail-container{
+    display: flex;
+    align-items: center;
+}
+.mail{
+    background: url("https://knight-bite.com/res/index/mail_icon.svg");
+    width: 30px;
+    height: 30px;
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+    
+}
+.phno{
+    background: url("https://knight-bite.com/res/index/phone_icon.svg");
+    width: 30px;
+    height: 30px;
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
+    margin-right: 20px;
+}
+.phn-container{
+    display: flex;
+    align-items: center;
+}
+.links{
+    color: #FF5672;
+    
+}
+.soon{
+    color: black;
+    width: fit-content;
+    padding: 10px 5px;
+    list-style-position: inside;
+    cursor: pointer;
+}
+.user-mail{
+    padding-top: 3em;
+    line-height: 2em;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.submit-btn{
+    height: 65px;
+    width: 65px;
+    border-radius: 50px;
+    position: absolute;
+    border: none;
+    cursor: pointer;
+    background: url("https://knight-bite.com/res/index/email-btn.svg");
+    background-position: center;
+    transition: all 0.5s;
+    margin-top: 35px;
+    /* bottom: 0; */
+}
+.list-items{
+   width: fit-content;
+    padding: 10px 5px;
+    list-style-position: inside;
+    cursor: pointer;
+}
+#email{
+    outline: none;
+    margin-top: 40px;
+    width: 450px;
+    height: 60px;
+    padding: 3px 20px;
+    font-size: 24px;
+    border-radius: 50px;
+    background: none;
+    border: 1px solid black;
+}
+.head-off{
+    display: flex;
+    flex-direction: column;
+}
+.loc{
+    display: flex;
+    flex-direction: column;
+}
+.icons{
+    display: flex;
+    
+}
+.social-icon{ 
+    margin-right: 35px;
+} 
+.footer-container{
+    background-color:whitesmoke;
+}
+.logo2{
+    width: 40px;
+    height: 40px;
+    margin-left: 20px;
+}
+.footer-logo{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(90deg, #C77BF4 0%, #FF5672 100%);
+    margin-bottom: 0px;
+    color: #ffffff;
+    height: 50px;
+}
+
+
+#chat-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #ff4b6e;
+  padding: 8px 10px;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  cursor: pointer;
+  z-index: 1000;
+}
+
+#chat-btn img {
+  width: 24px;
+  height: 24px;
+}
+
+#chat-box {
+  display: none;
+  position: fixed;
+  bottom: 90px;
+  right: 20px;
+  width: 320px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  z-index: 1000;
+  overflow: hidden;
+  font-family: sans-serif;
+}
+
+.chat-header {
+  background: #ff4b6e;
+  color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.chat-body {
+  padding: 15px;
+  height: 200px;
+  overflow-y: auto;
+  background: #f7f7f7;
+}
+
+.message.bot {
+  background: #e0e0e0;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.chat-footer {
+  display: flex;
+  padding: 10px;
+  border-top: 1px solid #ddd;
+}
+
+#chat-input {
+  flex: 1;
+  border: none;
+  padding: 8px;
+  border-radius: 5px;
+  outline: none;
+}
+
+#send-btn {
+  background: #ff4b6e;
+  color: white;
+  border: none;
+  margin-left: 8px;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+

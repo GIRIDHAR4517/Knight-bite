@@ -1,0 +1,111 @@
+/* Existing styles */
+.menu-content{
+    background: url("https://knight-bite.com/res/menu/banner.webp");
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    background-position: center;
+    background-size: cover ;
+    background-repeat: no-repeat ;
+}
+   
+
+.menu-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px 50px;
+    width: 100%;
+    justify-content: space-between;
+    
+    /* max-height: 1000px; */
+    padding: 0 275px;
+    box-sizing: border-box;
+
+    margin-top: 165px;
+    
+}
+.menu-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 22px;
+    color: white;
+    font-weight: 800;
+    cursor: pointer;
+    text-align: center;
+    max-height: fit-content;
+   
+}
+h3{
+    margin: 0;
+}
+.image{
+    max-height:160px;
+}
+
+/* Responsive styles for menu.css */
+
+/* For screens smaller than 1200px */
+@media (max-width: 1200px) {
+    .menu-container {
+        padding: 0 150px; /* Reduce padding */
+        gap: 20px 30px;
+    }
+    .menu-item {
+        font-size: 20px;
+    }
+    .image {
+        max-height: 140px; /* Slightly smaller images */
+    }
+}
+
+/* For screens smaller than 768px */
+@media (max-width: 768px) {
+    .menu-content {
+        height: auto; /* Allow height to adjust based on content */
+        min-height: 80vh; /* Ensure a minimum height */
+        padding-top: 100px; /* Add padding to prevent content from hiding behind navbar */
+        padding-bottom: 50px;
+    }
+    .menu-container {
+        grid-template-columns: repeat(2, 1fr); /* Two columns */
+        padding: 0 50px;
+        gap: 20px;
+        margin-top: 50px; /* Adjust top margin */
+    }
+    .menu-item {
+        font-size: 18px;
+    }
+    .image {
+        max-height: 120px;
+    }
+}
+
+/* For screens smaller than 480px */
+@media (max-width: 480px) {
+    .menu-content {
+        padding-top: 80px;
+        padding-bottom: 30px;
+    }
+    .menu-container {
+        grid-template-columns: 1fr; /* Stack menu items vertically */
+        padding: 0 30px;
+        gap: 15px;
+        margin-top: 30px;
+    }
+    .menu-item {
+        font-size: 16px;
+        padding: 10px; /* Add some padding to each item */
+        border: 1px solid rgba(255, 255, 255, 0.2); /* Optional: add a subtle border */
+        border-radius: 8px;
+        background-color: rgba(0, 0, 0, 0.2); /* Optional: slight background to make items stand out */
+    }
+    .image {
+        max-height: 100px;
+    }
+    .menu-txt h3 {
+        margin-top: 10px;
+    }
+}

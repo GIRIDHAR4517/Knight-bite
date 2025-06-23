@@ -1,0 +1,110 @@
+/* Existing styles */
+.about-banner{
+    background: url("https://knight-bite.com/res/about/banner.webp");
+    height: 100vh;
+    margin-top: 0;
+    display: flex;
+    background-size: cover;
+    background-position: center;
+}
+.about-txt{
+   font-size: 3.8vw;
+   font-weight: 800;
+    color: white;
+    margin-top: 175px;
+    letter-spacing: 1px;
+    width: 50vw;
+    text-transform: capitalize;
+    padding-left: 110px;
+    
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 100px 0;
+    justify-content: center;
+    align-content: center;
+    padding: 0 100px;
+    column-gap: 40px;
+    row-gap: 70px;
+}
+.grid-items{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 21px;
+    color: #424242;
+}
+.grid-items img {
+    width: 100%;
+    object-fit: cover;
+}
+.Location{
+    color: #353232;
+    font-weight: 800;
+    margin-right: 35px;
+}
+
+/* Responsive styles for about.css */
+
+/* For screens smaller than 1200px */
+@media (max-width: 1200px) {
+    .about-txt {
+        font-size: 4.5vw; /* Slightly larger relative font size */
+        margin-top: 150px;
+        padding-left: 80px;
+        width: 60vw; /* Adjust width */
+    }
+    .grid-container {
+        padding: 0 70px;
+        column-gap: 30px;
+        row-gap: 50px;
+    }
+    .grid-items {
+        font-size: 19px;
+    }
+}
+
+/* For screens smaller than 768px */
+@media (max-width: 768px) {
+    .about-banner {
+        height: 60vh; /* Shorter banner height */
+        align-items: center; /* Center text vertically */
+    }
+    .about-txt {
+        font-size: 6vw; /* Larger relative font size for better readability */
+        margin-top: 0; /* Remove top margin */
+        padding-left: 20px;
+        padding-right: 20px;
+        width: 90vw; /* Full width for text */
+        text-align: center; /* Center align text */
+    }
+    .grid-container {
+        grid-template-columns: 1fr; /* Stack grid items vertically */
+        padding: 0 20px;
+        margin: 50px 0;
+        row-gap: 30px;
+    }
+    .grid-items {
+        font-size: 18px;
+        text-align: center; /* Center text in grid items */
+    }
+    .Location {
+        display: block; /* Make location span block level for better stacking */
+        margin-right: 0;
+        margin-bottom: 5px; /* Add some space below location name */
+    }
+    .grid-items p {
+        margin: 10px 0; /* Adjust paragraph margins */
+    }
+}
+
+/* For screens smaller than 480px */
+@media (max-width: 480px) {
+    .about-txt {
+        font-size: 7vw;
+    }
+    .grid-items {
+        font-size: 16px;
+    }
+}
